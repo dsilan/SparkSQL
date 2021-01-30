@@ -23,5 +23,6 @@ object CustomerOrdersWithDataset {
       .alias("total_spent"))
     totalByCustomer.sort("total_spent").show()
 
+    ss.stop()
   }
 }

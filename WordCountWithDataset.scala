@@ -18,5 +18,7 @@ object WordCountWithDataset {
     val counts = lowerCaseWords.groupBy("words").count()
     val countSorted = counts.sort("count")
     countSorted.show(counts.count.toInt)
+
+    ss.stop()
   }
 }

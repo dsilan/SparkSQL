@@ -20,5 +20,7 @@ object FirendsByAgeWithDataset {
 
     //format
     friendsByAge.groupBy("age").agg(round(avg("friends"),2)).sort("age").show()
+
+    ss.stop()
   }
 }
